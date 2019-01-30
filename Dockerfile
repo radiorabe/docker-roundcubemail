@@ -6,7 +6,7 @@ RUN apt-get update \
     unzip \
  && rm -rf /var/lib/apt/lists/*
 
-COPY --from=composer:1.8.0 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:1.8.2 /usr/bin/composer /usr/bin/composer
 
 RUN export COMPOSER_ALLOW_SUPERUSER=1 \
  && cd /usr/src/roundcubemail \
