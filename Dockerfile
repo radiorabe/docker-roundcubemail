@@ -6,7 +6,7 @@ RUN apt-get update \
     unzip \
  && rm -rf /var/lib/apt/lists/*
 
-COPY --from=composer:2.6.6 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:2.7.1 /usr/bin/composer /usr/bin/composer
 
 RUN export COMPOSER_ALLOW_SUPERUSER=1 \
  && cd /usr/src/roundcubemail \
