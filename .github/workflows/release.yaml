@@ -10,7 +10,7 @@ on:
 
 jobs:
   release-container:
-    uses: radiorabe/actions/.github/workflows/release-container.yaml@c7aef9928f610ec51b44f84debf2321189276d54 # v0.41.3
+    uses: radiorabe/actions/.github/workflows/release-container.yaml@f49d301c653f9aa0d99bec7b7f18f2d789e93fa7 # v0.43.4
     with:
       image: 'ghcr.io/radiorabe/roundcubemail'
       name: roundcubemail
